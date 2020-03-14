@@ -21,11 +21,58 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <style>
+        .sub{
+            display: flex;
+            margin: auto;
+        }
+    </style>
 
 </head>
 
+
 <body>
-    <h1>Homework1</h1>
+    <div style="width: 300px; margin: auto; border: solid;">
+        <h1>Homework1</h1>
+        <div class="sub">
+            <img src='http://www.earlyadopter.co.kr/wp-content/uploads/2019/11/apple-airpods-pro-early-adopter-review-1-1024x683.jpg'
+                alt="에어팟 프로" width="100%" height="30%" style="padding: 3px;">
+        </div>
+        <br>
+
+        <h3>상품제목</h3> <span>가격: 339,900원</span>
+        <br>
+        <span>AirPods Pro는 2019년 10월 29일 KST 오전 1시에 홈페이지를 통해서 공개된 Apple의 AirPods의 후속작인 블루투스 무선 이어폰이다.</span>
+        <br>
+        <br>
+
+        <h3>주문하기</h3>
+        <div>
+            <div>주문자 성함: <input type="text" style="margin: 3px;"></div>
+            <div>수량
+                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                    <a class="dropdown-item" href="#">1개</a>
+                    <a class="dropdown-item" href="#">2개</a>
+                    <a class="dropdown-item" href="#">3개</a>
+                </div>
+            </div>
+
+
+
+
+            <div>주소: <input type="text" style="margin: 3px;"></div>
+            <div>전화번호: <input type="text" style="margin: 3px;"></div>
+            <br>
+            <br>
+            <button class="sub">주문하기</button>
+        </div>
+
+    </div>
 </body>
 
 </html>
