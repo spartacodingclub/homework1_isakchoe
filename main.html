@@ -5,6 +5,9 @@
     <!-- Webpage Title -->
     <title>Homework1</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,6 +31,47 @@
         }
     </style>
 
+
+    <script>
+        
+        function order(){
+       
+        let name = $('#name').val();
+        let address = $('#address').val();
+        let phone = $('#phone').val();
+        let count = $('#count').val();
+        if(name===''){
+            
+        alert('이름창이 비었습니다!')
+        return
+
+        }
+
+        if(count === ''){
+            alert('수량창이 비었습니다!')
+            return
+        }
+
+        if(address ===''){
+            alert('주소창이 비었습니다!') 
+            return
+        }
+        if(phone ===''){
+            alert('번호창이 비었습니다!')
+            return
+        }
+
+        else alert('주문되었습니다!')
+    
+    
+    }
+        
+
+
+    </script>
+
+
+
 </head>
 
 
@@ -48,9 +92,9 @@
 
         <h3>주문하기</h3>
         <div>
-            <div>주문자 성함: <input type="text" style="margin: 3px;"></div>
+            <div>주문자 성함: <input id="name"   type="text" style="margin: 3px;"></div>
             <div>수량
-                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset"
+                <button  id="count"  type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
 
                 </button>
@@ -65,11 +109,11 @@
 
 
 
-            <div>주소: <input type="text" style="margin: 3px;"></div>
-            <div>전화번호: <input type="text" style="margin: 3px;"></div>
+            <div>주소: <input id="address" type="text" style="margin: 3px;"></div>
+            <div>전화번호: <input  id="phone"   type="text" style="margin: 3px;"></div>
             <br>
             <br>
-            <button class="sub">주문하기</button>
+            <button id="order" class="sub" onclick="order()">주문하기</button>
         </div>
 
     </div>
