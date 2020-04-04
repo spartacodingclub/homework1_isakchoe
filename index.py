@@ -30,7 +30,7 @@ def order_post():
     }
 
     db.orders.insert_one(order)
-    return jsonify({'result': 'success', 'msg': '주문이 접수되었습니.'})
+    return jsonify({'result': 'success'})
 
 
 @app.route('/order', methods=['GET'])

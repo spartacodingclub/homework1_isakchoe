@@ -72,7 +72,7 @@
                 data: {name: name, address: address, phone: phone, count: count},
                 success: function (response) {
                     if (response['result'] == 'success') {
-                        alert(response['msg']);
+                        {#alert(response['msg']);#}
                         $('#name').val('');
                         $('#address').val('');
                         $('#phone').val('');
@@ -92,7 +92,7 @@
         function listing() {
             $.ajax({
                 type: "GET",
-                url: "",
+                url: "/order",
                 data: {},
                 success: function (response) {
                     if (response['result'] == 'success') {
@@ -182,9 +182,9 @@
         </div>
 
 
-        <div class="dropdown form-group row">
-            <label for="inputPassword" class="col-sm-2 col-form-label">수량</label>
-            <select>
+        <div class="form-group row">
+            <label for="count" class="col-sm-2 col-form-label">수량</label>
+            <select id="count">
                 <option class="">수량을 입력하세요</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
